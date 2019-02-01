@@ -176,10 +176,12 @@ footer {
         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -191,10 +193,12 @@ footer {
         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -264,6 +268,7 @@ footer {
         border-bottom: 0;
         background: 0 0;
     }
+
     .custom-navbar.top-nav-collapse {
         background: #101010;
         padding: 0;
@@ -774,9 +779,8 @@ footer {
     display: none;
 }
 
-/* ---- reset ---- */s
-
-body {
+/* ---- reset ---- */
+s body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
 }
