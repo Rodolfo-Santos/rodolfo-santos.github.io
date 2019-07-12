@@ -1,10 +1,13 @@
-$(function ($) {
-            var menuHeight = $('nav').innerHeight();
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top - menuHeight
-                }, 600);
-            });
-        }
-)
+$('nav a').click(function (e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+		menuHeight = $('nav').innerHeight(),
+		targetOffset = $(id).offset().top;
+	$('html, body').animate({
+		scrollTop: targetOffset - menuHeight - 100
+	}, 1000);
+
+	$('nav a').removeClass('active');
+	$(this).addClass('active');
+});
+
