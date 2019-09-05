@@ -1,4 +1,4 @@
-$('nav a').click(function (e) {
+$('.local-page').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
 		menuHeight = $('nav').innerHeight(),
@@ -7,7 +7,7 @@ $('nav a').click(function (e) {
 		scrollTop: targetOffset - menuHeight - 100
 	}, 1000);
 
-	$('nav a').removeClass('active');
+	$('.local-page').removeClass('active');
 	$(this).addClass('active');
 });
 
