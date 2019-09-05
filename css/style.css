@@ -159,6 +159,12 @@ a.active {
   height: 100%;
   border-radius: 20px; }
 
+.grafico a {
+  transition: .25s; }
+  .grafico a:hover {
+    color: #fff !important;
+    text-decoration: none; }
+
 .g-html {
   width: 100%;
   transition: 1s; }
@@ -205,6 +211,9 @@ a.active {
 .g-seo {
   width: 75%; }
 
+.g-xd {
+  width: 70%; }
+
 .g-photoshop {
   width: 70%; }
 
@@ -219,27 +228,6 @@ a.active {
 
 .g-animate {
   width: 40%; }
-
-.g-word {
-  width: 100%; }
-
-.g-excel {
-  width: 80%; }
-
-.g-powerpoint {
-  width: 100%; }
-
-.g-visio {
-  width: 70%; }
-
-.g-publisher {
-  width: 100%; }
-
-.g-outlook {
-  width: 100%; }
-
-.g-access {
-  width: 70%; }
 
 .time-icon {
   width: 100%;
