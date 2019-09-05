@@ -1,0 +1,12 @@
+
+#sobre img {
+    box-shadow: 2px 2px 16px -5px rgba($cor-padrao, 0.75);
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+#sobre img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.01);
+}
+

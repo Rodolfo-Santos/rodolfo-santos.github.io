@@ -1,0 +1,13 @@
+.img-port {
+    max-width: 300px;
+    border-radius: 20px;
+    transition: all .5s;
+    filter: grayscale(100%);
+}
+
+
+.img-port:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    box-shadow: 2px 3px 5px 0px rgba($cor-padrao, 0.75);
+}
