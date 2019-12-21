@@ -130,267 +130,40 @@
 
             <div class="my-4">
                 <h3 class="bold pb-3 b-bottom anime-left">Desenvolvimento</h3>
+
                 <div class="grafico-area row">
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper w-100">HTML </h4>
+                    <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in desenvolvimento">
+                        <h4 class="py-2 font-1-2 text-upper w-100">{{ qualificacao.nome }} </h4>
                         <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-html" id=""></div>
+                            <div class="grafico-preenchimento bg-white" :style="{ width: qualificacao.nivel+'%' }"></div>
                         </div>
-                        <a href="img/certicates/Certificado-HTMLCSS-02.jpg"
+                        <a v-if="qualificacao.certificado" :href="qualificacao.certificado"
                             class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
                             data-title="Certificado HTML - CSS II - Alura">Ver certificado
                         </a>
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">JAVASCRIPT</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-javascript" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-JavaScript.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">NODE.JS</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-nodejs" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-nodejs.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">JAVA</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-java" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-java.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                            data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">C</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-c" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-c.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                            data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">CSS</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-css" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-HTMLCSS-02.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">Jquery</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-jquery" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-Jquery.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">SASS</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-sass" id=""></div>
-                        </div>
-                        <a href="img/certicates/certificado-sass.jpg" data-lightbox="image-1"
-                            data-title="Certificado SASS - Alura" class="d-flex justify-content-end mt-1 text-muted">Ver
-                            certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">PYTHON</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-python" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-python.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">MySQL</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-mysql" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-mysql.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">Bootstrap</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-bootstrap" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-bootstrap.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">Angular</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-angular" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-angular.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">php</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-php" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-php.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                            data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">pl/sql</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-plsql" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-plsql.jpg"
-                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
-                    </div>
-
-
-                    <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                        <h4 class="py-2 font-1-2 text-upper">SEO</h4>
-                        <div class="grafico-fundo">
-                            <div class="grafico-preenchimento bg-white g-seo" id=""></div>
-                        </div>
-                        <a href="img/certicates/Certificado-seo.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                            data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                        </a>
-
                     </div>
                 </div>
+            </div>
 
 
+            <div class="margin-1">
+                <h3 class="bold pb-3 b-bottom anime-left">Ferramentas e Softwares</h3>
 
-
-
-
-
-                <div class="margin-1">
-                    <h3 class="bold pb-3 b-bottom anime-left">Ferramentas e Softwares</h3>
-                    <div class="grafico-area row">
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe XD</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-xd" id=""></div>
-                            </div>
-                            <a href="img/certicates/Certificado-XD.jpg"
-                                class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                                data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                            </a>
-
+                <div class="grafico-area row">
+                    <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in ferramentas">
+                        <h4 class="py-2 font-1-2 text-upper">{{ qualificacao.nome }}</h4>
+                        <div class="grafico-fundo">
+                            <div class="grafico-preenchimento bg-white g-xd" :style="{ width: qualificacao.nivel+'%' }"></div>
                         </div>
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe Photoshop</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-photoshop" id=""></div>
-                            </div>
-                            <a href="img/certicates/Certificado-photoshop.jpg"
-                                class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                                data-title="Certificado HTML - CSS II - Alura">Ver certificado
-                            </a>
-
-                        </div>
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe Illustrator</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-illustrator" id=""></div>
-                            </div>
-                            <a href="img/certicates/illustrator.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                                data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver
-                                certificado
-                            </a>
-
-                        </div>
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe Premiere</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-premiere" id=""></div>
-                            </div>
-                            <a href="img/certicates/premiere.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                                data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver
-                                certificado
-                            </a>
-
-                        </div>
-
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe After Effects</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-aftereffects" id=""></div>
-                            </div>
-                            <a href="img/certicates/aftereffects.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                                data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver
-                                certificado
-                            </a>
-
-                        </div>
-
-                        <div class="grafico col-12 col-sm-6 col-md-3 p-4 anime-left">
-                            <h4 class="py-2 font-1-2 text-upper">Adobe Animate</h4>
-                            <div class="grafico-fundo">
-                                <div class="grafico-preenchimento bg-white g-animate" id=""></div>
-                            </div>
-                            <a href="img/certicates/animate.jpg" class="d-flex justify-content-end mt-1 text-muted"
-                                data-lightbox="certificado" data-title="Certificado HTML - CSS II - Alura">Ver
-                                certificado
-                            </a>
-                        </div>
+                        <a  v-if="qualificacao.certificado" :href="qualificacao.certificado"
+                            class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
+                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
+                        </a>
 
                     </div>
+
+                </div>
+            </div>
         </article>
     </section>
 
@@ -467,6 +240,17 @@
                         </div>
                     </li>
 
+                    <li>
+                        <div class="time bg-black anime-left">
+                            <h4 class="text-white">2019</h4>
+                        </div>
+                        <div class="content anime-left">
+                            <h3>Desenvolvedor Front-end -<br> Anova Sistemas</h3>
+                            <p> Implantação, desenvolvimento e manutenção de sistemas utilizando de tecnologias atuais como DJANGO e VUEJS
+                            </p>
+                        </div>
+                    </li>
+
                     <div style="clear: both"></div>
                 </ul>
             </div>
@@ -523,11 +307,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 
     <!-- Meus Scripts -->
     <script src="https://kit.fontawesome.com/35b4ab768d.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/vue_certificados.js"></script>
 
     <script src="lightbox/js/lightbox.js"></script>
 
