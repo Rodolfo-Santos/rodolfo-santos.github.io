@@ -10,7 +10,6 @@ var portifolio = new Vue({
         .then(r => r.json())
         .then(portifolio => {
           this.portifolio = portifolio.portifolio
-          console.log(this.portifolio)
         })
     }
   },

@@ -1,0 +1,40 @@
+{
+  "academico": [
+    {
+      "nome" : "Técnico em Redes de Computadores",
+      "instituicao" : "SENAI",
+      "descricao" : "Neste período iniciei e conclui o Curso de Técnico em Redes de computadores na Escola Técnica SENAI - SANTOS DUMONT. Com a duração de 2 anos com a carga horária total de 1500 Horas, este foi o pontapé inicial para minha carreira na área de TI",
+      "periodo" : "2015 - 2016"
+    },
+
+    {
+      "nome" : "Formação Superior em Análise e Desenvolvimento de Sistemas",
+      "instituicao" : "FATEC",
+      "descricao" : "Atualmente estou cursando o 6º Semestre em Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São José dos Campos - FATEC com conclusão prevista para final de 2020",
+      "periodo" : "2017 - 2020"
+    }
+  ],
+
+  "profissional" : [
+    {
+      "nome" : "Instrutor de Informática e Web",
+      "instituicao" : "MICROCAMP TECNOLOGIA",
+      "descricao" : "Este é minha atual principal função, minhas responsabilidades são de Planejar e executar trabalho docente, coordenar grupo de monitores, ministrar aulas dos cursos de Informática, Informática para Administração, Desenvolvimento de Aplicativos, Web Design e Hardware.",
+      "periodo" : "2015 - 2019"
+    },
+
+    {
+      "nome" : "Desenvolvedor Web",
+      "instituicao" : "Freelancer",
+      "descricao" : "Desenvolvo sites sobre demanda para diversos clientes de segmentos diferentes, utilizando de linguagens como HTML, CSS, JS, PHP e plataformas como WORDPRESS.",
+      "periodo" : "2018 - 2019"
+    },
+
+    {
+      "nome" : "Desenvolvedor Front-end",
+      "instituicao" : "Anova Sistemas",
+      "descricao" : "Implantação, desenvolvimento e manutenção de sistemas utilizando de tecnologias atuais como DJANGO e VUEJS",
+      "periodo" : "2019"
+    }
+  ]
+}

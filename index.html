@@ -167,42 +167,24 @@
     </section>
 
 
-    <section id="trajetoria" class="">
+    <section id="trajetoria" class="margin-1 pb-3">
+        <h2 class="bold text-center text-upper">Trajetória</h2>
         <article class="container margin-1">
-            <h2 class="bold text-center text-upper p-5">Trajetória</h2>
             <div class="timeline">
                 <div class="time-icon">
                     <i class="fas fa-graduation-cap display-4 time-icon"></i>
                 </div>
                 <ul>
-                    <li class="">
-                        <div class="time bg-black anime-left">
-                            <h4 class="text-white">2015 - 2016</h4>
+                    <li class="" v-for="item in academico">
+                        <div class="time bg-black">
+                            <h4 class="text-white">{{ item.periodo }}</h4>
                         </div>
-                        <div class="content anime-left">
-                            <h3>Técnico em Redes de Computadores</h3>
-                            <p>Neste período iniciei e conclui o Curso de Técnico em Redes de computadores na Escola
-                                Técnica <span class="bold"> SENAI - SANTOS DUMONT </span>. Com a duração de 2 anos com a
-                                carga horária total de 1500 Horas, este foi o pontapé inicial
-                                para minha
-                                carreira na área de TI
+                        <div class="content">
+                            <h3>{{ item.nome }}</h3>
+                            <p>{{ item.descricao }}
                             </p>
                         </div>
                     </li>
-                    <li class="">
-                        <div class="time bg-black anime-left">
-                            <h4 class="text-white">2017 - 2020</h4>
-                        </div>
-                        <div class="content anime-left">
-                            <h3>Formação Superior em Análise e Desenvolvimento de Sistemas</h3>
-                            <p>Atualmente estou cursando o <span class="bold">5º/6 Semestre</span> em Análise e
-                                Desenvolvimento de Sistemas na <span>Faculdade de Tecnologia de São José dos Campos -
-                                    FATEC com conclusão prevista para <span class="bold">Julho de 2020</span>
-                            </p>
-                        </div>
-
-                    </li>
-
                     <div style="clear: both"></div>
                 </ul>
             </div>
@@ -213,43 +195,16 @@
                     <i class="fas fa-briefcase display-4 time-icon"></i>
                 </div>
                 <ul>
-                    <li>
-                        <div class="time bg-black anime-left">
-                            <h4 class="text-white">2015 - 2019</h4>
+                   <li class="" v-for="item in academico">
+                        <div class="time bg-black">
+                            <h4 class="text-white">{{ item.periodo }}</h4>
                         </div>
-                        <div class="content anime-left">
-                            <h3>Instrutor de Informática e Web - Microcamp Tecnologia</h3>
-                            <p>Este é meu atual trabalho onde minhas funções são Planejar e executar trabalho docente,
-                                coordenar grupo de monitores, ministrar aulas dos cursos de Informática, Informática
-                                para Administração, Desenvolvimento de Aplicativos, Web Design
-                                e Hardware.
+                        <div class="content">
+                            <h3>{{ item.nome }}</h3>
+                            <p>{{ item.descricao }}
                             </p>
                         </div>
                     </li>
-
-                    <li>
-                        <div class="time bg-black anime-left">
-                            <h4 class="text-white">2018 - 2019</h4>
-                        </div>
-                        <div class="content anime-left">
-                            <h3>Desenvolvedor Web - Freelancer</h3>
-                            <p>Desenvolvo sites sobre demanda para diversos clientes de segmentos diferentes, utilizando
-                                de linguagens como HTML, CSS, JS, PHP e plataformas como WORDPRESS.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="time bg-black anime-left">
-                            <h4 class="text-white">2019</h4>
-                        </div>
-                        <div class="content anime-left">
-                            <h3>Desenvolvedor Front-end -<br> Anova Sistemas</h3>
-                            <p> Implantação, desenvolvimento e manutenção de sistemas utilizando de tecnologias atuais como DJANGO e VUEJS
-                            </p>
-                        </div>
-                    </li>
-
                     <div style="clear: both"></div>
                 </ul>
             </div>
@@ -301,12 +256,15 @@
         
     <script src="lightbox/js/lightbox.js"></script>
     
+    <script src="js/vue_certificados.js"></script>
+    <script src="js/vue_portifolio.js"></script>
+    <script src="js/vue_trajetoria.js"></script>
+
     <script src="js/scroll.js"></script>
     <script src="js/anime.js"></script>
     <script src="js/nav.js"></script>
     
-    <script src="js/vue_certificados.js"></script>
-    <script src="js/vue_portifolio.js"></script>
+
 
 
 </body>
