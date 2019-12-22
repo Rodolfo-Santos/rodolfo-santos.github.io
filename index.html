@@ -149,7 +149,7 @@
             <div class="margin-1">
                 <h3 class="bold pb-3 b-bottom anime-left">Ferramentas e Softwares</h3>
 
-                <div class="grafico-area row">
+                <div class="grafico-area row ">
                     <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in ferramentas">
                         <h4 class="py-2 font-1-2 text-upper">{{ qualificacao.nome }}</h4>
                         <div class="grafico-fundo">
@@ -157,13 +157,12 @@
                         </div>
                         <a  v-if="qualificacao.certificado" :href="qualificacao.certificado"
                             class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            data-title="Certificado HTML - CSS II - Alura">Ver certificado
+                            :data-title="qualificacao.grupo">Ver certificado
                         </a>
-
                     </div>
-
                 </div>
             </div>
+
         </article>
     </section>
 
@@ -258,43 +257,28 @@
     </section>
 
     <section id="portifolio" class="bg-black text-white padding-1">
-        <article class="container">
-            <h2 id="portifolio" class="text-center text-upper">Portifólio</h2>
-
+        <article class="container" id="portifolio_article">
+            <h2 class="text-center text-upper">Portifólio</h2>
 
             <div class="row mt-4 pt-5">
-                <a href="https://play.google.com/store/apps/details?id=appinventor.ai_appktrab.ta_moscando&hl=pt_BR"
-                    target="_blank" class="col-12 col-md-3 p-4">
-                    <img src="img/portifolio01.jpg" alt="" class="img-fluid ">
+                <a :href="item.link"
+                    target="_blank" class="col-12 col-md-3 p-4" v-for="item in portifolio">
+                    <img :src="item.imagem" :alt="item.nome" class="img-fluid ">
                 </a>
-
-                <a href="http://tagautomacao.com.br/" target="_blank" class="col-12 col-md-3 p-4">
-                    <img src="img/portifolio03.jpg" alt="" class="img-fluid">
-                </a>
-
-                <a href="https://play.google.com/store/apps/details?id=appinventor.ai_leonardo_tamanhao.educa_math&hl=pt_BR"
-                    target="_blank" class="col-12 col-md-3 p-4">
-                    <img src="img/portifolio02.jpg" alt="" class="img-fluid">
-                </a>
-
-                <a href="#"
-                    target="_blank" class="col-12 col-md-3 p-4">
-                    <img src="img/portifolio04.jpg" alt="" class="img-fluid">
-                </a>
-
             </div>
+
         </article>
     </section>
 
     <section class="bg-white padding-1">
-            <article class="container">
-                <h2 id="contato" class="text-center text-upper">Contato</h2>
-                <div class="info-contato mt-4 pt-4">
-                    <p class="text-center font-2"><i class="fab fa-whatsapp"></i> 12982279588</p>
-                    <p class="text-center text-upper font-2"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
-                </div>
-            </article>
-        </section>
+        <article class="container">
+            <h2 id="contato" class="text-center text-upper">Contato</h2>
+            <div class="info-contato mt-4 pt-4">
+                <p class="text-center font-2"><i class="fab fa-whatsapp"></i> 12982279588</p>
+                <p class="text-center text-upper font-2"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+            </div>
+        </article>
+    </section>
 
 
     <!-- Script BOOTSTRAP -->
@@ -314,14 +298,15 @@
     <script src="https://kit.fontawesome.com/35b4ab768d.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/vue_certificados.js"></script>
-
+        
     <script src="lightbox/js/lightbox.js"></script>
-
+    
     <script src="js/scroll.js"></script>
     <script src="js/anime.js"></script>
     <script src="js/nav.js"></script>
-
+    
+    <script src="js/vue_certificados.js"></script>
+    <script src="js/vue_portifolio.js"></script>
 
 
 </body>

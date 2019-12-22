@@ -3,103 +3,137 @@
     {
       "nome" : "HTML",
       "nivel" : 100,
-      "certificado" : "api/certificados/certificado-htmlcss-01.jpg"
+      "certificado" : "api/certificados/certificado-htmlcss-01.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "CSS",
       "nivel" : 100,
-      "certificado" : "api/certificados/certificado-htmlcss-02.jpg"
+      "certificado" : "api/certificados/certificado-htmlcss-02.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "JavaScript",
       "nivel" : 70,
-      "certificado" : "api/certificados/certificado-javascript.jpg"
+      "certificado" : "api/certificados/certificado-javascript.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "NodeJS",
       "nivel" : 30,
-      "certificado" : "api/certificados/certificado-nodejs.jpg"
+      "certificado" : "api/certificados/certificado-nodejs.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "JAVA",
       "nivel" : 40,
-      "certificado" : "api/certificados/certificado-java.jpg"
+      "certificado" : "api/certificados/certificado-java.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "C",
-      "nivel" : 25,
-      "certificado" : "api/certificados/certificado-c.jpg"
+      "nivel" : 35,
+      "certificado" : "api/certificados/certificado-c.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "JQuery",
       "nivel" : 70,
-      "certificado" : "api/certificados/certificado-jquery.jpg"
+      "certificado" : "api/certificados/certificado-jquery.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "SASS",
       "nivel" : 75,
-      "certificado" : "api/certificados/certificado-sass.jpg"
+      "certificado" : "api/certificados/certificado-sass.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Python",
       "nivel" : 50,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "MYSQL",
-      "nivel" : 40,
-      "certificado" : "api/certificados/certificado-mysql.jpg"
+      "nivel" : 50,
+      "certificado" : "api/certificados/certificado-mysql.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Bootstrap",
       "nivel" : 80,
-      "certificado" : "api/certificados/certificado-bootstrap.jpg"
+      "certificado" : "api/certificados/certificado-bootstrap.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Django",
       "nivel" : 30,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "PHP",
       "nivel" : 30,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Wordpress",
       "nivel" : 75,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "PL/SQL",
       "nivel" : 50,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "SEO",
       "nivel" : 75,
-      "certificado" : "api/certificados/certificado-seo.jpg"
+      "certificado" : "api/certificados/certificado-seo.jpg",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "VueJS",
       "nivel" : 65,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     }
   ],
 
@@ -107,37 +141,49 @@
     {
       "nome" : "Adobe XD",
       "nivel" : 90,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Adobe Photoshop",
       "nivel" : 90,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Adobe Illustrator",
       "nivel" : 90,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Adobe Premiere",
       "nivel" : 65,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Adobe After Effects",
       "nivel" : 50,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     },
 
     {
       "nome" : "Adobe Animate",
       "nivel" : 75,
-      "certificado" : ""
+      "certificado" : "",
+      "grupo" : "certificado"
+      
     }
   ]
 }
