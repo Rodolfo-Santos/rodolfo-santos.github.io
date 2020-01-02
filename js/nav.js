@@ -1,5 +1,6 @@
+var posPagina;
 window.onscroll = function () {
-    var posPagina = window.pageYOffset;
+    posPagina = window.pageYOffset;
     if (!($("nav").hasClass("nav-active"))) {
 
         if (posPagina > 100) {
@@ -19,13 +20,11 @@ window.onscroll = function () {
 }
 
 $('#btn-hamb').click(function () {
+    
     $('nav').toggleClass('nav-active');
 
     if ($("nav").hasClass("nav-active")) {
         $('nav').addClass('bg-black');
         $('nav').removeClass('bg-transparent');
-    } else if (posPagina > 100) {
-        $('nav').removeClass('bg-black');
-        $('nav').addClass('bg-transparent');
     }
 })
