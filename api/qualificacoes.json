@@ -4,7 +4,8 @@
       "nome" : "HTML",
       "nivel" : 100,
       "certificado" : "api/certificados/certificado-htmlcss-01.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Desenvolvimento de uma estrutura semântica seguindo normas técnicas para Search Engine Optimization"
       
     },
 
@@ -12,7 +13,8 @@
       "nome" : "CSS",
       "nivel" : 100,
       "certificado" : "api/certificados/certificado-htmlcss-02.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Seletores, Propriedades, Seletores, Media-Queries, Keyframes, Layout Responsivo e Estruturação com GRID"
       
     },
 
@@ -20,39 +22,24 @@
       "nome" : "JavaScript",
       "nivel" : 70,
       "certificado" : "api/certificados/certificado-javascript.jpg",
-      "grupo" : "certificado"
-      
+      "grupo" : "certificado",
+      "descricao" : "Manipulação do DOM, Orientação a Objetos, JavaScript Assíncrono, Expressões Regulares, Automação FrontEnd"
     },
 
     {
-      "nome" : "NodeJS",
-      "nivel" : 30,
-      "certificado" : "api/certificados/certificado-nodejs.jpg",
-      "grupo" : "certificado"
-      
-    },
-
-    {
-      "nome" : "JAVA",
+      "nome" : "JAVA WEB",
       "nivel" : 40,
       "certificado" : "api/certificados/certificado-java.jpg",
-      "grupo" : "certificado"
-      
-    },
-
-    {
-      "nome" : "C",
-      "nivel" : 35,
-      "certificado" : "api/certificados/certificado-c.jpg",
-      "grupo" : "certificado"
-      
+      "grupo" : "certificado",
+      "descricao" : "Mapeamento de Requisições utilizando POST e GET, HTML dinamico com JSP e JSTL, HttpSession e JPA com provedor Hibernate"
     },
 
     {
       "nome" : "JQuery",
       "nivel" : 70,
       "certificado" : "api/certificados/certificado-jquery.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Manipulação do DOM, animações nativas, funções de AJAX e plugins externos"
       
     },
 

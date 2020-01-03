@@ -20,7 +20,7 @@
 <body>
 
     <header class="cabecalho">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top anime-top py-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-4">
             <div class="container">
                 <a class="navbar-brand nav-logo" href="#banner">Rodolfo Santos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
@@ -55,14 +55,14 @@
 
         <div class="banner parallax-img" id="banner">
             <div class="container w-100 h-100 d-flex align-items-start justify-content-center flex-column banner-text">
-                <h1 class="text-upper text-white text-center pb-3 bold anime-left display-4 animated">Rodolfo Santos
+                <h1 class="text-upper text-white text-center pb-3 bold display-4">Rodolfo Santos
                 </h1>
-                <h4 class="text-upper text-white pb-3 kerning-3 anime-left">Desenvolvedor WEB</h4>
+                <h4 class="text-upper text-white pb-3 kerning-3">Desenvolvedor WEB</h4>
                 <!-- <div class="botoes-group">
                     <button type="button"
-                        class="btn btn-outline-light btn-lg py-3 mx-1 anime-bottom">Informações</button>
-                    <button type="button" class="btn btn-outline-light btn-lg py-3 mx-1 anime-bottom">Arquivos</button>
-                </div> -->
+                        class="btn btn-outline-light btn-lg py-3 mx-1">Informações</button>
+                    <button type="button" class="btn btn-outline-light btn-lg py-3 mx-1">Arquivos</button>
+                </div>  -->
             </div>
         </div>
     </header>
@@ -70,10 +70,10 @@
     <section id="sobre" class="container margin-2">
         <article class="container row">
             <div class="col-12 col-md-8">
-                <h2 class="text-upper font-2 bold mb-4 anime-left">Sobre mim</h2>
-                <p class="anime-left">“Carreira desenvolvida na área de Tecnologia da Informação, com experiência no gerenciamento de Projetos, implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias, estou atualmente desenvolvendo minha trajetória em busca de Forte atuação na construção de parcerias internas e na interface entre a área de Negócios e TI, otimizando a comunicação, atendimento às necessidades e garantindo a satisfação nos projetos realizados."</p>
+                <h2 class="text-upper font-2 bold mb-4">Sobre mim</h2>
+                <p class="">Carreira desenvolvida na área de Tecnologia da Informação, com experiência no gerenciamento de Projetos, implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias, estou atualmente desenvolvendo minha trajetória em busca de Forte atuação na construção de parcerias internas e na interface entre a área de Negócios e TI, otimizando a comunicação, atendimento às necessidades e garantindo a satisfação nos projetos realizados."</p>
             </div>
-            <div class="col-12 col-md-4 anime-left">
+            <div class="col-12 col-md-4">
                 <img src="img/img-sobre.jpg" alt="" class="img-thumbnail">
             </div>
         </article>
@@ -82,7 +82,7 @@
     <section class="bg-black padding-1">
         <article class="container">
             <div class="row">
-                <div class="bloco col-12 col-md-4 text-center p-4 anime-bottom">
+                <div class="bloco col-12 col-md-4 text-center p-4">
                     <i class="fas fa-laptop-code icon-lg text-white"></i>
                     <h3 class="text-white m-4 text-upper">Web Design</h3>
                     <p class="text-muted">Design focado em WEB Sites, tipografia especializada, mokups, wireframes,
@@ -90,7 +90,7 @@
                         utilização pelos usuários. </p>
                 </div>
 
-                <div class="bloco col-12 col-md-4 text-center p-4 anime-bottom">
+                <div class="bloco col-12 col-md-4 text-center p-4">
                     <i class="fas fa-code icon-lg text-white"></i>
                     <h3 class="text-white m-4 text-upper">Front-End</h3>
                     <p class="text-muted">Desenvolvimento websites, interfaces para sistemas web e páginas na internet
@@ -98,7 +98,7 @@
                         redes sociais e páginas de empresas até lojas virtuais.</p>
                 </div>
 
-                <div class="bloco col-12 col-md-4 text-center p-4 anime-bottom">
+                <div class="bloco col-12 col-md-4 text-center p-4">
                     <i class="fas fa-pen-nib icon-lg text-white"></i>
                     <h3 class="text-white m-4 text-upper">Design Gráfico</h3>
                     <p class="text-muted">Desenvolvimento de UI/UX com prototipação de aplicação web ou mobile
@@ -112,10 +112,10 @@
 
         <article class="container text-white" id="qualificacoes">
 
-            <h2 class="text-white text-center margin-1 bold anime-top">Qualificações</h2>
+            <h2 class="text-white text-center margin-1 bold">Qualificações</h2>
 
             <div class="my-4">
-                <h3 class="bold pb-3 b-bottom anime-left">Desenvolvimento</h3>
+                <h3 class="bold pb-3 b-bottom">Desenvolvimento</h3>
 
                 <div class="grafico-area row">
                     <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in desenvolvimento">
@@ -126,7 +126,7 @@
                         </div>
                         <a v-if="qualificacao.certificado" :href="qualificacao.certificado"
                             class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            :data-title="qualificacao.nome">Ver certificado
+                            :data-title="qualificacao.nome" data-balloon-length="large" :aria-label="qualificacao.descricao" data-balloon-pos="down-right">Ver certificado
                         </a>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
 
 
             <div class="margin-1">
-                <h3 class="bold pb-3 b-bottom anime-left">Ferramentas e Softwares</h3>
+                <h3 class="bold pb-3 b-bottom">Ferramentas e Softwares</h3>
 
                 <div class="grafico-area row ">
                     <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in ferramentas">
