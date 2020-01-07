@@ -31,7 +31,7 @@
       "nivel" : 40,
       "certificado" : "api/certificados/certificado-java.jpg",
       "grupo" : "certificado",
-      "descricao" : "Mapeamento de Requisições utilizando POST e GET, HTML dinamico com JSP e JSTL, HttpSession e JPA com provedor Hibernate"
+      "descricao" : "Mapeamento de Requisições utilizando POST e GET, HTML dinâmico com JSP e JSTL, HttpSession e JPA com provedor Hibernate"
     },
 
     {
