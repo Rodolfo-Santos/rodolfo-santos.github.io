@@ -201,7 +201,7 @@
             <h2 class="text-center text-upper">Portifólio</h2>
 
             <div class="row mt-4 pt-5">
-                <a :href="item.link" target="_blank" class="col-12 col-md-3" v-for="item in portifolio">
+                <a :href="item.link" target="_blank" class="col-12 col-md-3 pt-4 pt-md-0" v-for="item in portifolio">
                     <div class="img-port">
                         <img :src="item.imagem" :alt="item.nome" class="img-fluid ">
                         <div class="glow-wrap">
@@ -217,20 +217,25 @@
     <section class="bg-white padding-1">
         <article class="container row m-auto">
             <h2 id="contato" class="text-center text-upper bold col-md-6 d-flex align-items-center justify-content-center">Contato</h2>
-            <div class="info-contato col-md-6">
-                <p class="font-2"><i class="fab fa-whatsapp"></i> 12982279588</p>
-                <p class="text-upper font-2"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
-                <p class="font-2"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
+            <div class="info-contato col-md-6 mt-md-0 mt-4">
+                <p class="font-2 d-none d-md-block"><i class="fab fa-whatsapp"></i> 12982279588</p>
+                <p class="d-block d-md-none"><i class="fab fa-whatsapp"></i> 12982279588</p>
+
+                <p class="text-upper font-2 d-none d-md-block"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+                <p class="text-upper d-block d-md-none"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+
+                <p class="font-2 d-none d-md-block"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
+                <p class="d-block d-md-none"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
             </div>
         </article>
     </section>
 
     <footer class="bg-black padding-025 d-flex flex-column" id="rodape">
         <div class="container row m-auto">
-            <div class="col-md-9 text-white">
+            <div class="col-12 mt-md-0 mb-3 text-center text-md-left col-md-9 text-white">
                 Rodolfo dos Santos - 2020
             </div>
-            <div class="col-md-3 row justify-content-between">
+            <div class="col-12 col-md-3 row justify-content-between m-auto">
                 <a :href="item.link" v-for="item in social" class="text-white"><i :class="item.icone"></i></a>
             </div>
         </div>

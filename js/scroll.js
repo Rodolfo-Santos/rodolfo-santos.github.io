@@ -10,4 +10,3 @@ $('.local-page').click(function (e) {
 	$('.local-page').removeClass('active');
 	$(this).addClass('active');
 });
-

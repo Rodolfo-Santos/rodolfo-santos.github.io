@@ -21,5 +21,11 @@
     "nome" : "Whatsapp",
     "link" : "https://api.whatsapp.com/send?phone=5512982279588&text=Ol%C3%A1,%20te%20encontrei%20pelo%20seu%20site%20e",
     "icone": "fab fa-whatsapp"
+  },
+
+  {
+    "nome" : "Github",
+    "link" : "https://github.com/Rodolfo-Santos",
+    "icone": "fab fa-github"
   }
 ]
