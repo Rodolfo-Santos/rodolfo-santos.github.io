@@ -47,7 +47,9 @@
       "nome" : "SASS",
       "nivel" : 75,
       "certificado" : "api/certificados/certificado-sass.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "CSS com \"Super Poderes\", variáveis, placeholders, mixins..."
+
       
     },
 
@@ -55,7 +57,8 @@
       "nome" : "Python",
       "nivel" : 50,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Análise de dados públicos utilizando de bibliotecas como PANDAS e plataformas como Jupyter Notebook"
       
     },
 
@@ -63,7 +66,8 @@
       "nome" : "MYSQL",
       "nivel" : 50,
       "certificado" : "api/certificados/certificado-mysql.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Banco de Dados Relacional, Chaves Primárias e integração com servidores WEB"
       
     },
 
@@ -71,7 +75,8 @@
       "nome" : "Bootstrap",
       "nivel" : 80,
       "certificado" : "api/certificados/certificado-bootstrap.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Construção de site completo utilizando como base o framework Bootstrap 4"
       
     },
 
@@ -79,7 +84,8 @@
       "nome" : "Django",
       "nivel" : 30,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Servidor com Django Python"
       
     },
 
@@ -87,15 +93,17 @@
       "nome" : "PHP",
       "nivel" : 30,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Montagem de blogs utilizando juntamente a linguagem com Mysql e Wordpress"
       
     },
 
     {
       "nome" : "Wordpress",
       "nivel" : 75,
-      "certificado" : "",
-      "grupo" : "certificado"
+      "certificado" : "api/certificados/certificado-wordpress.jpg",
+      "grupo" : "certificado",
+      "descricao" : "Criação de temas wordpress"
       
     },
 
@@ -103,7 +111,8 @@
       "nome" : "PL/SQL",
       "nivel" : 50,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Domínio na linguagem SQL dentro da plataforma da Oracle"
       
     },
 
@@ -111,7 +120,8 @@
       "nome" : "SEO",
       "nivel" : 75,
       "certificado" : "api/certificados/certificado-seo.jpg",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Otimizaçção de sites e técnicas para rankeamento em mecanismos de busca"
       
     },
 
@@ -119,7 +129,8 @@
       "nome" : "VueJS",
       "nivel" : 65,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Diretivas, Vuex, Vue Router, Axios, Componentes, REST API..."
       
     }
   ],
@@ -128,8 +139,9 @@
     {
       "nome" : "Adobe XD",
       "nivel" : 90,
-      "certificado" : "",
-      "grupo" : "certificado"
+      "certificado" : "api/certificados/certificado-xd.jpg",
+      "grupo" : "certificado",
+      "descricao" : "Criação de Protótipos utilizando da ferramenta da Adobe, com ênfase em prototipação de Mobile Apps"
       
     },
 
@@ -137,7 +149,8 @@
       "nome" : "Adobe Photoshop",
       "nivel" : 90,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Domínio completo da ferramenta, criação de artes bitmap e montagens surrealistas"
       
     },
 
@@ -145,7 +158,8 @@
       "nome" : "Adobe Illustrator",
       "nivel" : 90,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Dominio da ferramenta, criação de peças vetoriais, banners, cartazes, imagens digitais, entre outros..."
       
     },
 
@@ -153,7 +167,8 @@
       "nome" : "Adobe Premiere",
       "nivel" : 65,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Dominio da ferramenta, edição de vídeos para marketing"
       
     },
 
@@ -161,7 +176,8 @@
       "nome" : "Adobe After Effects",
       "nivel" : 50,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Dominio da ferramenta, edição de vídeos e criação de efeitos para vídeo marketing"
       
     },
 
@@ -169,7 +185,8 @@
       "nome" : "Adobe Animate",
       "nivel" : 75,
       "certificado" : "",
-      "grupo" : "certificado"
+      "grupo" : "certificado",
+      "descricao" : "Criação de efeitos e animações para web."
       
     }
   ]

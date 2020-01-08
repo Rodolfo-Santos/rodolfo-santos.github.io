@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header class="cabecalho">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-4">
             <div class="container">
@@ -37,15 +36,9 @@
                         <li><a class="local-page nav-item nav-link pr-4" href="#portifolio">Portifólio</a></li>
                         <li><a class="local-page nav-item nav-link pr-4" href="#contato">Contato</a></li>
 
-                        <li class="d-flex justify-content-center py-4 py-md-0">
-                            <a class="nav-item nav-link pr-4" href="https://www.instagram.com/rodolfo.d.santos/"
-                                target="_blank"> <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="nav-item nav-link pr-4" href="https://www.facebook.com/Facemeu" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="nav-item nav-link pr-4" href="https://www.linkedin.com/in/rodolfosantos29/"
-                                target="_blank"><i class="fab fa-linkedin-in"></i>
+                        <li class="d-flex justify-content-center py-4 py-md-0" id="redes-sociais">
+                            <a class="nav-item nav-link pr-4" v-for="item in social" :href="item.link" target="_blank">
+                                <i :class="item.icone"></i>
                             </a>
                         </li>
                     </ul>
@@ -71,7 +64,11 @@
         <article class="container row">
             <div class="col-12 col-md-8">
                 <h2 class="text-upper font-2 bold mb-4">Sobre mim</h2>
-                <p class="">Carreira desenvolvida na área de Tecnologia da Informação, com experiência no gerenciamento de Projetos, implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias, estou atualmente desenvolvendo minha trajetória em busca de Forte atuação na construção de parcerias internas e na interface entre a área de Negócios e TI, otimizando a comunicação, atendimento às necessidades e garantindo a satisfação nos projetos realizados."</p>
+                <p class="">Carreira desenvolvida na área de Tecnologia da Informação, com experiência no gerenciamento
+                    de Projetos, implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias,
+                    estou atualmente desenvolvendo minha trajetória em busca de Forte atuação na construção de parcerias
+                    internas e na interface entre a área de Negócios e TI, otimizando a comunicação, atendimento às
+                    necessidades e garantindo a satisfação nos projetos realizados."</p>
             </div>
             <div class="col-12 col-md-4">
                 <img src="img/img-sobre.jpg" alt="" class="img-thumbnail">
@@ -105,28 +102,25 @@
                         utilizando Adobe XD, Photoshop e Illustrator. Artes publicitárias para impressão e marketing
                         Digital.</p>
                 </div>
-
-
             </div>
         </article>
 
         <article class="container text-white" id="qualificacoes">
-
             <h2 class="text-white text-center margin-1 bold">Qualificações</h2>
-
             <div class="my-4">
                 <h3 class="bold pb-3 b-bottom">Desenvolvimento</h3>
 
                 <div class="grafico-area row">
                     <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in desenvolvimento">
                         <h4 class="py-2 font-1-2 text-upper w-100">{{ qualificacao.nome }} </h4>
-                        <div class="grafico-fundo">
+                        <div class="grafico-fundo" data-balloon-length="large" :aria-label="qualificacao.descricao"
+                            data-balloon-pos="down-right">
                             <div class="grafico-preenchimento bg-white" :style="{ width: qualificacao.nivel+'%' }">
                             </div>
                         </div>
                         <a v-if="qualificacao.certificado" :href="qualificacao.certificado"
                             class="d-flex justify-content-end mt-1 text-muted" data-lightbox="certificado"
-                            :data-title="qualificacao.nome" data-balloon-length="large" :aria-label="qualificacao.descricao" data-balloon-pos="down-right">Ver certificado
+                            :data-title="qualificacao.nome">Ver certificado
                         </a>
                     </div>
                 </div>
@@ -139,7 +133,8 @@
                 <div class="grafico-area row ">
                     <div class="grafico col-12 col-sm-6 col-md-3 p-4" v-for="qualificacao in ferramentas">
                         <h4 class="py-2 font-1-2 text-upper">{{ qualificacao.nome }}</h4>
-                        <div class="grafico-fundo">
+                        <div class="grafico-fundo" data-balloon-length="large" :aria-label="qualificacao.descricao"
+                            data-balloon-pos="down-right">
                             <div class="grafico-preenchimento bg-white g-xd" :style="{ width: qualificacao.nivel+'%' }">
                             </div>
                         </div>
@@ -169,6 +164,7 @@
                         </div>
                         <div class="content">
                             <h3>{{ item.nome }}</h3>
+                            <p class="bold text-upper">{{ item.instituicao }}</p>
                             <p>{{ item.descricao }}
                             </p>
                         </div>
@@ -189,6 +185,7 @@
                         </div>
                         <div class="content">
                             <h3>{{ item.nome }}</h3>
+                            <p class="bold text-upper">{{ item.instituicao }}</p>
                             <p>{{ item.descricao }}
                             </p>
                         </div>
@@ -204,25 +201,40 @@
             <h2 class="text-center text-upper">Portifólio</h2>
 
             <div class="row mt-4 pt-5">
-                <a :href="item.link" target="_blank" class="col-12 col-md-3 p-4" v-for="item in portifolio">
-                    <img :src="item.imagem" :alt="item.nome" class="img-fluid ">
+                <a :href="item.link" target="_blank" class="col-12 col-md-3" v-for="item in portifolio">
+                    <div class="img-port">
+                        <img :src="item.imagem" :alt="item.nome" class="img-fluid ">
+                        <div class="glow-wrap">
+                            <i class="glow"></i>
+                        </div>
+                    </div>
                 </a>
             </div>
 
         </article>
     </section>
 
-    <section class="bg-white padding-1 d-none d-md-block">
-        <article class="container">
-            <h2 id="contato" class="text-center text-upper bold">Contato</h2>
-            <div class="info-contato mt-4 pt-4">
-                <p class="text-center font-2"><i class="fab fa-whatsapp"></i> 12982279588</p>
-                <p class="text-center text-upper font-2"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com
-                </p>
+    <section class="bg-white padding-1">
+        <article class="container row m-auto">
+            <h2 id="contato" class="text-center text-upper bold col-md-6 d-flex align-items-center justify-content-center">Contato</h2>
+            <div class="info-contato col-md-6">
+                <p class="font-2"><i class="fab fa-whatsapp"></i> 12982279588</p>
+                <p class="text-upper font-2"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+                <p class="font-2"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
             </div>
         </article>
     </section>
 
+    <footer class="bg-black padding-025 d-flex flex-column" id="rodape">
+        <div class="container row m-auto">
+            <div class="col-md-9 text-white">
+                Rodolfo dos Santos - 2020
+            </div>
+            <div class="col-md-3 row justify-content-between">
+                <a :href="item.link" v-for="item in social" class="text-white"><i :class="item.icone"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -244,6 +256,7 @@
 
     <script src="lightbox/js/lightbox.js"></script>
 
+    <script src="js/vue_redes_sociais.js"></script>
     <script src="js/vue_certificados.js"></script>
     <script src="js/vue_portifolio.js"></script>
     <script src="js/vue_trajetoria.js"></script>
@@ -252,9 +265,7 @@
     <script src="js/anime.js"></script>
     <script src="js/nav.js"></script>
 
-
-
-
 </body>
+
 
 </html>

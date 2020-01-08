@@ -1,13 +1,42 @@
 .img-port {
-    max-width: 300px;
-    border-radius: 20px;
-    transition: all .5s;
-    filter: grayscale(100%);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    top: -5px;
 }
-
 
 .img-port:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%);
-    box-shadow: 2px 3px 5px 0px rgba($cor-padrao, 0.75);
+  box-shadow: none;
+  top: 0;
+  transform: perspective(1000px) rotateX(10deg);
 }
+
+.img-port .glow-wrap{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: 0px;
+  }
+  
+  .img-port .glow{
+    display: block;
+    position:absolute;
+    width: 150%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.075);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .img-port:hover .glow{
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .img-port:hover img,
+  .img-port:hover .glow-wrap{
+    margin-top: 0;
+  }

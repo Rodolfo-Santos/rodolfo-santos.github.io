@@ -1,0 +1,25 @@
+[
+  {
+    "nome" : "Facebook",
+    "link" : "https://www.facebook.com/Facemeu",
+    "icone": "fab fa-facebook-f"
+  },
+
+  {
+    "nome" : "Instagram",
+    "link" : "https://www.instagram.com/rodolfo.d.santos/",
+    "icone": "fab fa-instagram"
+  },
+
+  {
+    "nome" : "Linkedin",
+    "link" : "https://www.linkedin.com/in/rodolfosantos29/",
+    "icone": "fab fa-linkedin-in"
+  },
+
+  {
+    "nome" : "Whatsapp",
+    "link" : "https://api.whatsapp.com/send?phone=5512982279588&text=Ol%C3%A1,%20te%20encontrei%20pelo%20seu%20site%20e",
+    "icone": "fab fa-whatsapp"
+  }
+]
