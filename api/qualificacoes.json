@@ -65,7 +65,7 @@
     {
       "nome" : "MYSQL",
       "nivel" : 50,
-      "certificado" : "api/certificados/certificado-mysql.jpg",
+      "certificado" : "",
       "grupo" : "certificado",
       "descricao" : "Banco de Dados Relacional, Chaves Primárias e integração com servidores WEB"
       
