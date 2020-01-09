@@ -411,6 +411,36 @@ button[aria-label][data-balloon-pos] {
   transition: .5s;
   position: relative; }
 
+.scroll-animation {
+  position: absolute;
+  border: solid 2px white;
+  border-radius: 25px;
+  height: 75px;
+  width: 40px;
+  transform: scale(0.6);
+  display: flex;
+  justify-content: center;
+  padding: 15px; }
+
+.circle-animation {
+  position: relative;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  animation: animScroll 2s infinite;
+  top: 0px; }
+
+@keyframes animScroll {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 1;
+    top: 0px; }
+  100% {
+    opacity: 0;
+    top: 30px; } }
 #sobre img {
   box-shadow: 2px 2px 16px -5px rgba(28, 28, 28, 0.75);
   filter: grayscale(100%);
