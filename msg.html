@@ -32,7 +32,7 @@
                 <ul class="col-10 text-muted">
                     <li>Permita a abertura de janelas pop-up</li>
                     <li>Instale o Whatsapp app no windows</li>
-                </ul>                
+                </ul>
             </div>
         </div>
 
@@ -42,7 +42,8 @@
                     <div class="form-numbers">
                         <label for="numbers">Números:</label>
                         </br>
-                        <textarea class="numbers-area" id="numbers" placeholder="Digite os números que você deseja enviar a mensagem. Exemplo: 5511990001111 (55 + DDD + Número)"></textarea>
+                        <textarea class="numbers-area" id="numbers"
+                            placeholder="Digite os números que você deseja enviar a mensagem. Exemplo: 5511990001111 (55 + DDD + Número)"></textarea>
                         <p>Total de Números: <span id="demo"></span></p>
                     </div>
                 </div>
@@ -58,6 +59,49 @@
             </div>
         </div>
     </div>
+
+
+    <section class="container mb-4 pb-4">
+        <h3 class="text-center my-4 py-4">Modelos de Mensagens</h3>
+
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header text-left bg-success" id="headingOne" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Mensagem de Início de Curso - Exemplo
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <textarea class="card-body">*Curso de informática Microcamp*
+Olá tudo bem? Sou o *professor Rodolfo* da escola Microcamp. Gostaria de informar que as aulas do(a) aluno(a) estão próximas de começar. 😁
+                        
+*Informações*
+*Início:* 24/08 (Sábado)
+*Horário:* 07:30 às 09:30
+*Professor:* Rodolfo Santos
+*Laboratório:* 03 (térreo)
+
+*O(a) Aluno(a) virá no curso?*</textarea>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header text-left bg-success" id="headingTwo" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Mensagem de Retorno as Aulas - Exemplo
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <textarea class="card-body">*Volta as Aulas - Microcamp*
+
+Venho informar que as aulas do curso de informática do(a) aluno(a) *já retornaram*. O aluno deve voltar as suas atividades normais na escola durante a semana. Caso o mesmo não possa comparecer nas próximas aulas, por favor me informe (caso já informado, ignore).
+                        
+😁📚👏🏻 Desejamos um ano nota 10 para o Aluno! 😁📚👏🏻</textarea>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Script BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

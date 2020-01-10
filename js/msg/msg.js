@@ -34,3 +34,10 @@ if(!newWin || newWin.closed || typeof newWin.closed=='undefined')
 { 
     alert("Para usar o sistema, desbloqueie as permissões de pop-up. ")
 }
+
+
+$('.card').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $(document).height()
+    }, 500);
+});

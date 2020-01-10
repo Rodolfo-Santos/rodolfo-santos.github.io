@@ -108,4 +108,7 @@ textarea {
   font-size: 4rem;
   opacity: .2; }
 
+.card-header {
+  cursor: pointer; }
+
 /*# sourceMappingURL=msg.css.map */
