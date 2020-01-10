@@ -10,3 +10,28 @@ $('.local-page').click(function (e) {
 	$('.local-page').removeClass('active');
 	$(this).addClass('active');
 });
+
+
+let links = document.querySelectorAll('.local-page')
+let ids = []
+let pos = []
+links.forEach(link => {
+	link = String(link.href)
+	let index = link.indexOf("#")
+	let id = link.slice(index)
+	ids.push(id)
+	pos.push(document.querySelector(id).offsetTop)
+})
+
+window.addEventListener('scroll', function(){
+	let scrollPage = window.pageYOffset
+	pos.forEach((position, index) => {
+		console.log(scrollPage , position)
+		if(scrollPage >= position){
+			$('.local-page').removeClass('active');
+			let component = document.querySelector(".local-page[href='"+ids[index]+"']")
+			component.classList.add("active")
+		}
+	})
+})
+

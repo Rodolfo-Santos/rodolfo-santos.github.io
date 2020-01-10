@@ -17,7 +17,7 @@ debounce = function (func, wait, immediate) {
 
 
 (function () {
-	var $target = $('.anime-right, .anime-left, .anime-top, .anime-bottom'),
+	var $target = $('.anime-right, .anime-left, .anime-top, .anime-bottom, .anime-fadeIn'),
 		animationClass = 'anime-start',
 		offset = $(window).height() * 3 / 4;
 
