@@ -1,37 +1,34 @@
+var links = document.querySelectorAll('.local-page')
+var	menuHeight = $('nav').innerHeight()
+
 $('.local-page').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
-		menuHeight = $('nav').innerHeight(),
-		targetOffset = $(id).offset().top;
+	alvo = $(id).offset().top;- menuHeight - 100
 	$('html, body').animate({
-		scrollTop: targetOffset - menuHeight - 100
+		scrollTop: alvo
 	}, 1000);
-
-	$('.local-page').removeClass('active');
-	$(this).addClass('active');
 });
 
 
-let links = document.querySelectorAll('.local-page')
-let ids = []
-let pos = []
-links.forEach(link => {
-	link = String(link.href)
-	let index = link.indexOf("#")
-	let id = link.slice(index)
-	ids.push(id)
-	pos.push(document.querySelector(id).offsetTop)
-})
+window.addEventListener('scroll', scrollPage)
 
-window.addEventListener('scroll', function(){
-	let scrollPage = window.pageYOffset
-	pos.forEach((position, index) => {
-		console.log(scrollPage , position)
-		if(scrollPage >= position){
-			$('.local-page').removeClass('active');
-			let component = document.querySelector(".local-page[href='"+ids[index]+"']")
-			component.classList.add("active")
-		}
-	})
-})
+function scrollPage(){
+	let pagePosition = window.pageYOffset;
+	let banner = $("#banner").offset().top,
+			sobre = $("#sobre").offset().top,
+			qualificacoes = $("#qualificacoes").offset().top,
+			trajetoria = $("#trajetoria").offset().top,
+			portifolio = $("#portifolio").offset().top;
+			contato = $("#contato").offset().top;
+	
+	let calc = menuHeight - 400
 
+	links.forEach(link => link.classList.remove("active"))
+	if(pagePosition <= sobre + calc) links[0].classList.add("active")
+	else if(pagePosition <= qualificacoes + calc) links[1].classList.add("active")
+	else if(pagePosition <= trajetoria + calc) links[2].classList.add("active")
+	else if(pagePosition <= portifolio + calc) links[3].classList.add("active")
+	else if(pagePosition <= contato + calc) links[4].classList.add("active")
+	else links[5].classList.add("active")
+}
