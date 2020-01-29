@@ -100,10 +100,10 @@
 
     {
       "nome" : "Wordpress",
-      "nivel" : 75,
+      "nivel" : 70,
       "certificado" : "api/certificados/certificado-wordpress.jpg",
       "grupo" : "certificado",
-      "descricao" : "Criação de temas wordpress"
+      "descricao" : "Criação de temas wordpress juntamente com manipulação de plugins com ênfase em Woocommerce"
       
     },
 

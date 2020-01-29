@@ -412,6 +412,9 @@ button[aria-label][data-balloon-pos] {
   font-weight: bold;
   font-size: 1.8em; }
 
+.navbar.bg-black, .navbar.bg-transparent {
+  transition: 0.5s !important; }
+
 .banner {
   width: 100%;
   height: 100vh;
