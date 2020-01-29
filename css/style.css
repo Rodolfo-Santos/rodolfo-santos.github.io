@@ -81,6 +81,15 @@ a.active {
   border-bottom: cor-padrao solid 2px !important;
   transition: .5s; }
 
+.link-default {
+  color: #1c1c1c;
+  opacity: .7;
+  transition: .5s; }
+  .link-default:hover {
+    color: #1c1c1c;
+    text-decoration: none;
+    opacity: 1; }
+
 @font-face {
   font-family: CaviarDreams;
   src: url(../fonts/CaviarDreams.ttf); }

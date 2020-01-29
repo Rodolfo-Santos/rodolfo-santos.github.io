@@ -167,7 +167,8 @@
                         </div>
                         <div class="content">
                             <h3>{{ item.nome }}</h3>
-                            <p class="bold text-upper">{{ item.instituicao }}</p>
+                            <p class="bold text-upper" v-if="item.site"><a :href="item.site" target="_blank" class="link-default"> {{ item.instituicao }} </a></p>
+                            <p class="bold text-upper" v-else> {{ item.instituicao }} </p>
                             <p>{{ item.descricao }}
                             </p>
                         </div>
@@ -188,7 +189,8 @@
                         </div>
                         <div class="content">
                             <h3>{{ item.nome }}</h3>
-                            <p class="bold text-upper">{{ item.instituicao }}</p>
+                            <p class="bold text-upper" v-if="item.site"><a :href="item.site" target="_blank" class="link-default"> {{ item.instituicao }} </a></p>
+                            <p class="bold text-upper" v-else> {{ item.instituicao }} </p>
                             <p>{{ item.descricao }}
                             </p>
                         </div>
@@ -239,7 +241,7 @@
                 Rodolfo dos Santos - 2020
             </div>
             <div class="col-12 col-md-3 row justify-content-between m-auto">
-                <a :href="item.link" v-for="item in social" class="text-white"><i :class="item.icone"></i></a>
+                <a :href="item.link" target="_blank" v-for="item in social" class="text-white"><i :class="item.icone"></i></a>
             </div>
         </div>
     </footer>

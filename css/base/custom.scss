@@ -95,3 +95,15 @@ a.active {
     border-bottom: cor-padrao solid 2px !important;
     transition: .5s;
 }
+
+.link-default {
+    color: $cor-padrao;
+    opacity: .7;
+    transition: .5s;
+    
+    &:hover {
+        color: $cor-padrao;
+        text-decoration: none;
+        opacity: 1;
+    };
+}
