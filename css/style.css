@@ -65,6 +65,23 @@ body {
 .padding-2 {
   padding: 200px 0; }
 
+@media (max-width: 720px) {
+  .margin-1 {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  .margin-2 {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+
+  .padding-025 {
+    padding: 25px 0; }
+
+  .padding-1 {
+    padding: 50px 0; }
+
+  .padding-2 {
+    padding: 100px 0; } }
 p {
   font-size: .9em;
   line-height: 2em; }
@@ -411,6 +428,8 @@ button[aria-label][data-balloon-pos] {
 .nav-logo {
   font-weight: bold;
   font-size: 1.8em; }
+  .nav-logo img {
+    max-height: 1.8em; }
 
 .navbar.bg-black, .navbar.bg-transparent {
   transition: 0.5s !important; }
@@ -626,5 +645,22 @@ button[aria-label][data-balloon-pos] {
     position: inherit;
     top: -15px;
     left: 0px; } }
+.btn-upper {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 75px;
+  width: 75px;
+  color: #fff;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  border-radius: 10px; }
+  .btn-upper:hover {
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.05); }
 
 /*# sourceMappingURL=style.css.map */

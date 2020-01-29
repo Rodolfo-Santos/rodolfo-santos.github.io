@@ -5,6 +5,10 @@
 .nav-logo {
     font-weight: bold;
     font-size: 1.8em;
+
+    img {
+        max-height: 1.8em;    
+    }
 }
 
 .navbar.bg-black, .navbar.bg-transparent  {
