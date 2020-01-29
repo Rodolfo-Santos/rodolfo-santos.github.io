@@ -4,7 +4,7 @@ var	menuHeight = $('nav').innerHeight()
 $('.local-page').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
-	alvo = $(id).offset().top - menuHeight - 50;
+		alvo = $(id).offset().top - menuHeight - 50
 	$('html, body').animate({
 		scrollTop: alvo
 	}, 1000);
