@@ -1,6 +1,5 @@
-window.onload = setTimeout(criarPagina, 1);
+window.onload = setTimeout(carregarMSG, 1);
 
-
-function criarPagina() {
+function carregarMSG() {
     console.log("Olá Mundo!")
 }
