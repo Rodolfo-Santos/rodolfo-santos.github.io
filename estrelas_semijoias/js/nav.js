@@ -1,3 +1,5 @@
+console.log("Olá Mundo!");
+
 var posPagina;
 window.onscroll = function () {
     posPagina = window.pageYOffset;
