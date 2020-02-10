@@ -6,6 +6,31 @@
 
   function criarPagina() {
     if (window.location.href.includes('landingpage')) {
+    document.querySelector("html").innerHTML =
+      "<head> </head>" +
+      "<body> </body>"
+
+    document.querySelector("body").innerHTML =
+      "<script src='https://rodolfo-santos.github.io/estrelas_semijoias/js/main.js'>" +
+      "<"+"/script>"
+    }
+  }
+</script>
+
+
+
+<script>
+  window.onload = setTimeout(criarPagina, 1);
+
+  var screenHeight = window.innerHeight - 4.9;
+  var screenWidth = window.innerWidth - 4.9 ;
+
+  function criarPagina() {
+    if (window.location.href.includes('landingpage')) {
+    document.querySelector("html").innerHTML =
+      "<head> </head>" +
+      "<body> </body<"
+
     document.querySelector("body").innerHTML =
       "Funcionou!" +
 
