@@ -4,7 +4,7 @@ var	menuHeight = $('nav').innerHeight()
 $('.local-page').click(function (e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
-	alvo = $(id).offset().top;- menuHeight - 100
+		alvo = $(id).offset().top - menuHeight - 50
 	$('html, body').animate({
 		scrollTop: alvo
 	}, 1000);
@@ -31,4 +31,11 @@ function scrollPage(){
 	else if(pagePosition <= portifolio + calc) links[3].classList.add("active")
 	else if(pagePosition <= contato + calc) links[4].classList.add("active")
 	else links[5].classList.add("active")
+
+
+	if(pagePosition > 0){
+		$(".btn-upper").fadeIn(1000)
+	} else{
+		$(".btn-upper").fadeOut(1000)
+	}
 }

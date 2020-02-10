@@ -4,14 +4,16 @@
       "nome" : "Técnico em Redes de Computadores",
       "instituicao" : "SENAI - Santos Dumont",
       "descricao" : "Neste período iniciei e conclui o Curso de Técnico em Redes de computadores na Escola Técnica SENAI - SANTOS DUMONT. Com a duração de 2 anos com a carga horária total de 1500 Horas, este foi o pontapé inicial para minha carreira na área de TI",
-      "periodo" : "2015 - 2016"
+      "periodo" : "2015 - 2016",
+      "site" : "https://saojosedoscampos.sp.senai.br/"
     },
 
     {
       "nome" : "Formação Superior em Análise e Desenvolvimento de Sistemas",
       "instituicao" : "FATEC - Faculdade de Tecnologia de São José dos Campos",
       "descricao" : "Atualmente estou cursando o 6º Semestre em Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São José dos Campos - FATEC com conclusão prevista para final de 2020",
-      "periodo" : "2017 - 2020"
+      "periodo" : "2017 - 2020",
+      "site" : "https://fatecsjc-prd.azurewebsites.net/"
     }
   ],
 
@@ -20,28 +22,32 @@
       "nome" : "Instrutor de Informática e Web",
       "instituicao" : "Microcamp Tecnologia",
       "descricao" : "Este foi minha principal função durante bastante tempo, minhas responsabilidades baseavam-se em planejar e executar trabalho docente, coordenar grupo de monitores, ministrar aulas dos cursos de Informática, Informática para Administração, Desenvolvimento de Aplicativos, Web Design e Hardware.",
-      "periodo" : "2015 - 2019"
+      "periodo" : "2015 - 2019",
+      "site" : "http://microcamp.com.br/"
     },
 
     {
       "nome" : "Desenvolvedor Web",
       "instituicao" : "MOIKTECH - Marketing Digital",
       "descricao" : "Desenvolvo sites sobre demanda para diversos clientes de segmentos diferentes, utilizando de linguagens como HTML, CSS, JS, PHP e plataformas como WORDPRESS.",
-      "periodo" : "2018 - 2019"
+      "periodo" : "2018 - 2019",
+      "site" : ""
     },
 
     {
       "nome" : "Desenvolvedor Front-end",
       "instituicao" : "Anova Sistemas - Parque Tecnológico",
       "descricao" : "Implantação, desenvolvimento e manutenção de sistemas utilizando de tecnologias atuais como DJANGO e VUEJS",
-      "periodo" : "2019"
+      "periodo" : "2019",
+      "site" : "http://anovasistemas.com.br/"
     },
 
     {
       "nome" : "Desenvolvedor",
       "instituicao" : "Embraer- Fabricante de aviões",
       "descricao" : "",
-      "periodo" : "2020"
+      "periodo" : "2020",
+      "site" : "https://embraer.com/global/en"
     }
   ]
 }

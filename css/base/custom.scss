@@ -76,6 +76,33 @@ body {
     padding: 200px 0;
 }
 
+
+@media (max-width: 720px){
+
+    .margin-1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .margin-2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .padding-025 {
+        padding: 25px 0;
+    }
+    
+    .padding-1 {
+        padding: 50px 0;
+    }
+    
+    .padding-2 {
+        padding: 100px 0;
+    }
+}
+
+
 p {
     font-size: .9em;
     line-height: 2em;
@@ -94,4 +121,16 @@ a.active {
     background-color: transparent !important;
     border-bottom: cor-padrao solid 2px !important;
     transition: .5s;
+}
+
+.link-default {
+    color: $cor-padrao;
+    opacity: .7;
+    transition: .5s;
+    
+    &:hover {
+        color: $cor-padrao;
+        text-decoration: none;
+        opacity: 1;
+    };
 }
