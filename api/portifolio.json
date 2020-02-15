@@ -25,15 +25,15 @@
     },
 
     {
-      "nome" : "Monitor Virtual",
-      "link" : "https://rodolfo-santos.slack.com/",
-      "imagem": "./api/portifolio/portifolio05.jpg"
-    },
-
-    {
       "nome" : "WhatsappManager",
       "link" : "msg.html",
       "imagem": "./api/portifolio/portifolio06.jpg"
+    },
+
+    {
+      "nome" : "EstrelasSemijoias",
+      "link" : "https://estrelassemijoias.github.io/",
+      "imagem": "./api/portifolio/portifolio07.jpg"
     }
 
   ]
