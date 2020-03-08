@@ -6,7 +6,7 @@ var servicos = new Vue({
 
   methods: {
     fetchServicos() {
-      fetch("../../api/servicos.json")
+      fetch("api/servicos.json")
         .then(r => r.json())
         .then(servico => {
           this.servicos = servico.servicos

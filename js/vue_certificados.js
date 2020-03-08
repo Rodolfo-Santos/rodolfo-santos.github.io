@@ -7,7 +7,7 @@ var qualificacoes = new Vue({
 
   methods: {
     fetchQualificacoes() {
-      fetch("../api/qualificacoes.json")
+      fetch("/api/qualificacoes.json")
         .then(r => r.json())
         .then(qualificacoes => {
           this.desenvolvimento = qualificacoes.desenvolvimento

@@ -10,7 +10,7 @@ var certificados = new Vue({
 
   methods: {
     fetchCertificados() {
-      fetch("../../api/certificados.json")
+      fetch("api/certificados.json")
         .then(r => r.json())
         .then(certificado => {
           this.certificados = certificado.certificados
