@@ -34,7 +34,18 @@
       "nome" : "EstrelasSemijoias",
       "link" : "https://estrelassemijoias.github.io/",
       "imagem": "./api/portifolio/portifolio07.jpg"
-    }
+    },
 
+    {
+      "nome" : "HPA - Automação",
+      "link" : "http://www.hpaautomacao.com.br/",
+      "imagem": "./api/portifolio/portifolio08.jpg"
+    },
+
+    {
+      "nome" : "Isabella Dellu - Esteticista Animal",
+      "link" : "https://isabella-dellu.github.io/",
+      "imagem": "./api/portifolio/portifolio09.jpg"
+    }
   ]
 }

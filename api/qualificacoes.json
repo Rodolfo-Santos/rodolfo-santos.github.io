@@ -188,6 +188,15 @@
       "grupo" : "certificado",
       "descricao" : "Criação de efeitos e animações para web."
       
+    },
+
+    {
+      "nome" : "Pacote Office",
+      "nivel" : 95,
+      "certificado" : "",
+      "grupo" : "certificado",
+      "descricao" : "Domínio completo em Visio, Access, Word, PowerPoint e ênfase em Excel, conhecimento médio em Project e SharePoint Designer"
+      
     }
   ]
 }
