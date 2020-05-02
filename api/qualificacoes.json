@@ -81,15 +81,6 @@
     },
 
     {
-      "nome" : "Django",
-      "nivel" : 30,
-      "certificado" : "",
-      "grupo" : "certificado",
-      "descricao" : "Servidor com Django Python"
-      
-    },
-
-    {
       "nome" : "PHP",
       "nivel" : 30,
       "certificado" : "",
@@ -121,7 +112,7 @@
       "nivel" : 75,
       "certificado" : "api/certificados/certificado-seo.jpg",
       "grupo" : "certificado",
-      "descricao" : "Otimizaçção de sites e técnicas para rankeamento em mecanismos de busca"
+      "descricao" : "Otimização de sites e técnicas para rankeamento em mecanismos de busca"
       
     },
 

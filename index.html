@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="lightbox/css/lightbox.css">
-    <link rel="icon" href="img/logo-rodolfo-santos.png">
+    <link rel="icon" href="assets/img/logo-rodolfo-santos.png">
 
     <meta name="theme-color" content="#111111">
     <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
@@ -62,6 +62,10 @@
                 </div>
             </div>
         </div>
+
+        <a href="https://api.whatsapp.com/send?phone=5512982279588" target="_blank" class="whatsapp-float-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </header>
 
     <section class="container margin-2">
@@ -75,7 +79,7 @@
                     necessidades e garantindo a satisfação nos projetos realizados."</p>
             </div>
             <div class="col-12 col-md-4">
-                <img src="img/img-sobre.jpg" alt="" class="img-thumbnail anime-fadeIn">
+                <img src="./assets/img/img-sobre.jpg" alt="" class="img-thumbnail anime-fadeIn">
             </div>
         </article>
     </section>
@@ -207,7 +211,8 @@
             <h2 class="text-center text-upper">Portifólio</h2>
 
             <div class="row mt-4 pt-5">
-                <a :href="item.link" target="_blank" class="col-12 col-md-3 p-2" v-for="item in portifolio">
+                <a :href="item.link" target="_blank" class="col-12 col-md-4 mb-4" v-for="item in portifolio" data-balloon-length="large" :aria-label="item.descricao"
+                data-balloon-pos="down">
                     <div class="img-port">
                         <img :src="item.imagem" :alt="item.nome" class="img-fluid ">
                         <div class="glow-wrap">
@@ -227,11 +232,11 @@
                 <p class="font-2 d-none d-md-block"><i class="fab fa-whatsapp"></i> 12982279588</p>
                 <p class="d-block d-md-none"><i class="fab fa-whatsapp"></i> 12982279588</p>
 
-                <p class="text-upper font-2 d-none d-md-block"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
-                <p class="text-upper d-block d-md-none"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+                <p class=" font-2 d-none d-md-block"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
+                <p class=" d-block d-md-none"><i class="far fa-envelope"></i> Rodolfodossantos29@gmail.com</p>
 
-                <p class="font-2 d-none d-md-block"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
-                <p class="d-block d-md-none"><i class="fab fa-instagram"></i> @rodolfo.d.santos/</p>
+                <p class="font-2 d-none d-md-block"><i class="fab fa-instagram"></i> @Rodolfo.d.Santos/</p>
+                <p class="d-block d-md-none"><i class="fab fa-instagram"></i> @Rodolfo.d.Santos</p>
             </div>
         </article>
     </section>
@@ -248,7 +253,7 @@
     </footer>
 
 
-    <a href="#banner" class="btn-upper local-page d-md-none" style="display:none">
+    <a href="#banner" class="btn-upper local-page d-none" style="display:none">
         <i class="fas fa-arrow-up"></i>    
     </a>
 
@@ -272,14 +277,14 @@
 
     <script src="lightbox/js/lightbox.js"></script>
 
-    <script src="js/vue_redes_sociais.js"></script>
-    <script src="js/vue_certificados.js"></script>
-    <script src="js/vue_portifolio.js"></script>
-    <script src="js/vue_trajetoria.js"></script>
+    <script src="assets/js/vue_redes_sociais.js"></script>
+    <script src="assets/js/vue_certificados.js"></script>
+    <script src="assets/js/vue_portifolio.js"></script>
+    <script src="assets/js/vue_trajetoria.js"></script>
 
-    <script src="js/scroll.js"></script>
-    <script src="js/anime.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/anime.js"></script>
+    <script src="assets/js/nav.js"></script>
 
 </body>
 

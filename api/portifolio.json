@@ -1,51 +1,67 @@
 {
   "portifolio": [
+
     {
-      "nome" : "Tá Moscando",
-      "link" : "https://play.google.com/store/apps/details?id=appinventor.ai_appktrab.ta_moscando&hl=pt_BR",
-      "imagem": "./api/portifolio/portifolio01.jpg"
+      "nome" : "HPA - Automação",
+      "link" : "https://www.hpaautomacao.com.br/",
+      "imagem": "./api/portifolio/portifolio_hpa.jpg",
+      "descricao": "E-commerce e site institucional da empresa HPA Automação"
+    },
+
+    {
+      "nome" : "Harmony Perfumaria",
+      "link" : "https://harmonyperfumaria.com/",
+      "imagem": "./api/portifolio/portifolio_harmony.jpg",
+      "descricao": "E-commerce e site institucional da empresa Harmony Perfumaria"
     },
 
     {
       "nome" : "TAG Automação",
-      "link" : "http://tagautomacao.com.br/",
-      "imagem": "./api/portifolio/portifolio03.jpg"
+      "link" : "https://tagautomacao.com.br/",
+      "imagem": "./api/portifolio/portifolio_tag.jpg",
+      "descricao": "Site Institucional com catálogo de produtos e serviços"
+    },
+
+    {
+      "nome" : "Tá Moscando",
+      "link" : "https://play.google.com/store/apps/details?id=appinventor.ai_appktrab.ta_moscando&hl=pt_BR",
+      "imagem": "./api/portifolio/portifolio_ta_moscando.jpg",
+      "descricao": "Aplicativo Android para mapeamento de áreas com risco de Dengue"
     },
 
     {
       "nome" : "EducaMath",
       "link" : "https://play.google.com/store/apps/details?id=appinventor.ai_leonardo_tamanhao.educa_math&hl=pt_BR",
-      "imagem": "./api/portifolio/portifolio02.jpg"
+      "imagem": "./api/portifolio/portifolio_educamath.jpg",
+      "descricao": "Jogo Android para treinar conhecimentos em matemática"
     },
 
     {
       "nome" : "MicroCall",
       "link" : "https://github.com/Rodolfo-Santos/micro-call",
-      "imagem": "./api/portifolio/portifolio04.jpg"
+      "imagem": "./api/portifolio/portifolio_microcall.jpg",
+      "descricao": "Sistema de Comunicação Interna, utilizada pela Microcamp Tecnologia"
     },
 
     {
       "nome" : "WhatsappManager",
       "link" : "msg.html",
-      "imagem": "./api/portifolio/portifolio06.jpg"
+      "imagem": "./api/portifolio/portifolio_whatsapp.jpg",
+      "descricao": "Pequeno App Web para envio de mensagens em massa para whatsapp"
     },
 
     {
       "nome" : "EstrelasSemijoias",
       "link" : "https://estrelassemijoias.github.io/",
-      "imagem": "./api/portifolio/portifolio07.jpg"
-    },
-
-    {
-      "nome" : "HPA - Automação",
-      "link" : "http://www.hpaautomacao.com.br/",
-      "imagem": "./api/portifolio/portifolio08.jpg"
+      "imagem": "./api/portifolio/portifolio_estrelas_semijoias.jpg",
+      "descricao": " Landing Page para Ecommerce da loja Estrelas Semijoias"
     },
 
     {
       "nome" : "Isabella Dellu - Esteticista Animal",
       "link" : "https://isabella-dellu.github.io/",
-      "imagem": "./api/portifolio/portifolio09.jpg"
+      "imagem": "./api/portifolio/portifolio_isabella_dellu.jpg",
+      "descricao": "Site Portifólio para a Esteticista Animal Isabella Dellu"
     }
   ]
 }
