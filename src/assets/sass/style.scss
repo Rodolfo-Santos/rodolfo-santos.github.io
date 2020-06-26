@@ -1,0 +1,21 @@
+@import 'helpers/variaveis';
+@import 'helpers/placeholders';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import 'base/custom';
+@import 'base/fonts';
+@import 'base/scrollbar';
+@import 'base/anim';
+@import 'base/balloon';
+@import 'base/whats_float_btn';
+@import 'base/upper_float_btn';
+
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/sobre';
+@import 'layout/grafico';
+@import 'layout/portifolio';
+@import 'layout/timeline';
+@import 'layout/contato';
